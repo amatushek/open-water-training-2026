@@ -1,4 +1,4 @@
-const workouts = {};
+window.workouts = {};
 
 workouts[1] = `
 
