@@ -3,9 +3,14 @@ function showWeek(week) {
     const container = document.getElementById("workoutContainer");
 
     if (workouts[week]) {
+
         container.innerHTML = workouts[week];
+
     } else {
-        container.innerHTML = "<h2>No workout found</h2>";
+
+        container.innerHTML =
+        "<h2>Week " + week + " is not loaded yet</h2>";
+
     }
 
 }
@@ -25,11 +30,13 @@ function updateCountdown() {
     );
 
     document.getElementById("countdown").innerHTML =
-        "<h2>" + days + " Days Until Race Day</h2>";
+    "<h2>" + days + " Days Until Race Day</h2>";
 
 }
 
 
 updateCountdown();
 
+
+// Automatically show current week
 showWeek(1);
