@@ -5,7 +5,7 @@ function showWeek(week) {
     if (workouts[week]) {
         container.innerHTML = workouts[week];
     } else {
-        container.innerHTML = "<h2>Workout not found</h2>";
+        container.innerHTML = "<h2>No workout found</h2>";
     }
 
 }
